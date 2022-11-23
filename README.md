@@ -1,2 +1,3 @@
 # qwer
-Typing game under the command line.
+
+Typing practice game under the command line.
