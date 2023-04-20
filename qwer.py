@@ -92,7 +92,7 @@ def main():
     batch = 20
     thesaurus = {'easy': string.ascii_lowercase + ',./;',
                  'normal': string.ascii_letters + string.digits + ',./;',
-                 'hard': string.printable}
+                 'hard': string.digits + string.ascii_letters + string.punctuation}
     ielts_words = get_ielts_words()
 
     # parse arguments
@@ -186,4 +186,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
