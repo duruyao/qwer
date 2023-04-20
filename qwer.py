@@ -90,9 +90,10 @@ def main():
     diff = 'ielts'
     length = 1
     batch = 20
-    thesaurus = {'easy': string.ascii_lowercase + ',./;',
-                 'normal': string.ascii_letters + string.digits + ',./;',
-                 'hard': string.digits + string.ascii_letters + string.punctuation}
+    thesaurus = {'easy': string.ascii_lowercase + string.ascii_lowercase + ',.?;:"',
+                 'normal': string.ascii_lowercase + string.ascii_letters + string.digits + ',.?;:"',
+                 'hard': (string.ascii_lowercase + string.ascii_lowercase + string.ascii_letters +
+                          string.digits + string.punctuation)}
     ielts_words = get_ielts_words()
 
     # parse arguments
